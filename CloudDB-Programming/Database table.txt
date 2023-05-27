@@ -1,0 +1,22 @@
+TABLES:-
+
+CREATE TABLE MOBILES (
+  prodid INT PRIMARY KEY,
+  modelname VARCHAR(25),
+  company VARCHAR(25),
+  connectivity ENUM('4G', '5G'),
+  ram VARCHAR(5),
+  rom VARCHAR(5),
+  color VARCHAR(15),
+  screen VARCHAR(15),
+  battery INT,
+  processor VARCHAR(25),
+  price DECIMAL(10, 2),
+  rating DECIMAL(3, 2)
+);
+
+
+Variables in java program :-
+  (    int id, btry;
+       String modnm, comp,  ram, rom, cnvt, colr, scr, prosr;
+       double prc, rtng;   )

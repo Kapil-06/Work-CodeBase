@@ -1,0 +1,24 @@
+package com.CloudDB.Programs;
+
+public class MobileDBManager {
+	public static void main(String args[]) {
+		
+		int id, ram, rom, btry;
+		String modnm, comp, cnvt, colr, src, prosr;
+		double prc, rtng;
+		
+		System.out.println("driver connect successfully");
+		
+		/*
+		Connection con;
+		Statement st;
+		
+		try {
+			
+		}
+		catch(Exception e) {
+			
+			Class.forName("com.mysql.cj.jdbc.Driver");
+		}*/
+	}
+}

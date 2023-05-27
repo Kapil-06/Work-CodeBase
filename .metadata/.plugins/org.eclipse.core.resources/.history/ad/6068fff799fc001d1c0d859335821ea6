@@ -1,0 +1,5 @@
+package com.CloudDB.Programs;
+//Write a program to accept modelname, search mobile in the table, show the mobile details if found else display "not found" message
+public class SearchMobile {
+
+}

@@ -1,0 +1,25 @@
+package com.CloudDB.Programs;
+
+//Write a program to accept company like "samsung" and display list of mobiles of that category in the ascending order of price
+
+import java.sql.*;
+import java.util.*;
+
+public class MobileCatlog {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		
+		Connection con;
+		PreparedStatement pst;
+		ResultSet rs;
+		
+		String cmpny;
+		try {
+			
+		}
+		catch(Exception e) {
+			System.out.println(e);
+		}
+		
+	}
+}

@@ -1,0 +1,51 @@
+package com.CloudDB.Programs;
+
+//Write a program to accept modelname, search mobile in the table, show the mobile details if found else display "not found" message
+
+import java.sql.*;
+import java.util.*;
+
+public class SearchMobile {
+	public static void main(String[] args) {
+		String modnm;
+		Connection con;
+		PreparedStatement pst;
+		ResultSet rs;
+		
+		Scanner sc=new Scanner(System.in);
+		
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			con=DriverManager.getConnection("jdbc:mysql://bhod7pw8rcgxeqwgoffi-mysql.services.clever-cloud.com:3306/bhod7pw8rcgxeqwgoffi?user=ukdmlq4nnteyuvfo&password=stZ2gABP50qLdTH0RS3Q");
+			
+			pst=con.prepareStatement("Select * from MOBILES where modelname=?");
+			
+			System.out.print("enter model name :");
+			modnm=sc.nextLine();
+			pst.setString(1, modnm);
+			rs=pst.executeQuery();
+			if(rs.next()) {
+				System.out.println("Product id : "+rs.getInt("prodid"));
+				System.out.println("Model name : "+rs.getString("modelname"));
+				System.out.println("Company : "+rs.getString("company"));
+				System.out.println("connectivity : "+rs.getString("connectivity"));
+				System.out.println("RAM : "+rs.getString("ram"));
+				System.out.println("ROM : "+rs.getString("rom"));
+				System.out.println("Color : "+rs.getString("color"));
+				System.out.println("Screen : "+rs.getString("screen"));
+				System.out.println("Battery : "+rs.getString("battery"));
+				System.out.println("Processor : "+rs.getString("processor"));
+				System.out.println("Price : "+rs.getDouble("price"));
+				System.out.println("Rating : "+rs.getDouble("rating"));
+			}
+			else {
+				System.out.println("Mobile Not Found..!!!!");
+			}
+		}
+		catch(Exception e) {
+			System.out.println(e);
+		}
+	}
+
+	
+}

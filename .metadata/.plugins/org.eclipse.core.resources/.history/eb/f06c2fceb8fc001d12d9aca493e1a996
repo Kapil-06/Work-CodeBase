@@ -1,0 +1,10 @@
+package com.CloudDB.Programs;
+
+//Write a program to accept prodid & new price and update price in the mobile data in the table if found else display "mobile does not exist"
+
+import java.sql.*;
+import java.util.*;
+
+public class MobilePriceUpdater {
+
+}
