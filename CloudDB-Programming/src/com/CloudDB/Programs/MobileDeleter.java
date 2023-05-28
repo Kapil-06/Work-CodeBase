@@ -33,9 +33,18 @@ public class MobileDeleter {
 			if(rs.next()){
 				
 				System.out.printf(" %-10s| %-17s | %-8s |  %-12s| %-4s | %-5s | %-18s | %-18s |  %-6d | %-23s |  %-10f  | %-7f%n",
-				        rs.getInt("prodid"), rs.getString("modelname"), rs.getString("company"), rs.getString("connectivity"),
-				        rs.getString("ram"), rs.getString("rom"), rs.getString("color"), rs.getString("screen"), rs.getInt("battery"),
-				        rs.getString("processor"), rs.getDouble("price"), rs.getDouble("rating"));
+				        rs.getInt("prodid"), 
+				        rs.getString("modelname"), 
+				        rs.getString("company"), 
+				        rs.getString("connectivity"),
+				        rs.getString("ram"), 
+				        rs.getString("rom"), 
+				        rs.getString("color"), 
+				        rs.getString("screen"), 
+				        rs.getInt("battery"),
+				        rs.getString("processor"), 
+				        rs.getDouble("price"), 
+				        rs.getDouble("rating"));
 				
 				System.out.print("\ndo you want to delete this record(yes or no)? :");
 				String str=sc.next();

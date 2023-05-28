@@ -1,0 +1,10 @@
+package com.CloudDB.Programs;
+//Write a program to accept ram and rom, display list of mobiles of the ram-rom storage space combination.
+public class MobileListByStorage {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -37,6 +37,7 @@ public class SearchMobile {
 				System.out.println("\tProcessor : "+rs.getString("processor"));
 				System.out.println("\tPrice : "+rs.getDouble("price"));
 				System.out.println("\tRating : "+rs.getDouble("rating"));
+				//System.out.println("\tPurpose : "+rs.getString("purpose"));
 			}
 			else {
 				System.out.println("\n \tMobile Not Found..!!!!");
