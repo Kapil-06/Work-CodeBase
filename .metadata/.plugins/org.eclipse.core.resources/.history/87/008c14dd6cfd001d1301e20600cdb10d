@@ -1,0 +1,24 @@
+package com.CloudDB.Programs;
+
+// Create a parameterized stored procedure to reduce the price of a company's products by a specified amount. Call the SP from a program.
+
+import java.sql.*;
+import java.util.*;
+
+public class ReduceProductPrice {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		
+		Connection con;
+		CallableStatement cst;
+		 try {
+			 
+		 }
+		 catch(Exception e) {
+			 System.out.println(e);
+		 }
+	}
+
+}
