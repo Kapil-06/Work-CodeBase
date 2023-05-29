@@ -26,10 +26,10 @@ public class MobileCatlog {
 			pst.setString(1, cmpny);
 			rs=pst.executeQuery();
 			
-			System.out.printf("  %-10s |    %-10s    |   %-10s    %n", "productId", "Company", "Price");
+			System.out.printf("  %-10s |    %-10s    |   %-10s%n", "productId", "Company", "Price");
 			System.out.println(" ---------------------------------------------");
 			while (rs.next()) {
-			    System.out.printf("    %-8s |    %-10s    |  %-10s    %n", rs.getInt("prodid"), rs.getString("company"), rs.getFloat("price"));
+			    System.out.printf("    %-8s |    %-10s    |  %-10s%n", rs.getInt("prodid"), rs.getString("company"), rs.getFloat("price"));
 			}
 		}
 		catch(Exception e) {
