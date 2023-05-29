@@ -8,18 +8,21 @@ import java.util.*;
 public class ReduceProductPrice {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 		Scanner sc=new Scanner(System.in);
 		String cmpnm;
 		float reduction;
 		
+		// Prompt the user for input 
 		System.out.println("enter company name :");
 		cmpnm=sc.nextLine();
 		System.out.println("enter reduction price :");
 		reduction=sc.nextFloat();
 		
-		priceReduce(cmpnm,reduction);
+		priceReduce(cmpnm,reduction); // Invoke the priceReduce method
 	}
+	
+	// Method implementation
 	public static void priceReduce(String cmpnm,float reduction) {
 		
 		Connection con;
@@ -28,10 +31,10 @@ public class ReduceProductPrice {
 			 Class.forName("com.mysql.cj.jdbc.Driver");
 			 con=DriverManager.getConnection("jdbc:mysql://bhod7pw8rcgxeqwgoffi-mysql.services.clever-cloud.com:3306/bhod7pw8rcgxeqwgoffi?user=ukdmlq4nnteyuvfo&password=stZ2gABP50qLdTH0RS3Q");
 			 
-			 cst=con.prepareCall("{call ReduceProductPrice(?,?)}");
+			 cst=con.prepareCall("{call ReduceProductPrice(?,?)}"); //Call stored procedure to update customer information
 			 
-			 cst.setString(1, cmpnm);
-			 cst.setFloat(2, reduction);
+			 cst.setString(1, cmpnm); // Set the company name parameter for the stored procedure
+			 cst.setFloat(2, reduction); // Set the reduction price parameter for the stored procedure
 			 
 			 cst.execute();
 			 System.out.println("Price reduce successfully");

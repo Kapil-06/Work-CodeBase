@@ -27,12 +27,14 @@ public class MobileDeleter {
 			pst.setInt(1, id);
 			rs=pst.executeQuery();
 			System.out.println("\t\t\t\t--------------- Mobile Data --------------\n");
+			// Print formatted table headers for displaying data
 			System.out.printf("%-10s |    %-14s | %-8s | %-12s | %-4s |  %-5s|     %-15s|     %-15s| %-7s |    %-20s |    %-7s | %-7s%n",
 				    "ProductId", "Modelname", "Company", "Connectivity", "RAM", "ROM", "Color", "Screen", "Battery", "Processor", "Price", "Rating");
 			
 			if(rs.next()){
-				
+				// Print formatted table headers for displaying data
 				System.out.printf(" %-10s| %-17s | %-8s |  %-12s| %-4s | %-5s | %-18s | %-18s |  %-6d | %-23s |  %-10f  | %-7f%n",
+						// Set the parameter for select query.
 				        rs.getInt("prodid"), 
 				        rs.getString("modelname"), 
 				        rs.getString("company"), 

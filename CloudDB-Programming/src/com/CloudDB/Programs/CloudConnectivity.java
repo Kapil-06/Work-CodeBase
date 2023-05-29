@@ -3,9 +3,11 @@ package com.CloudDB.Programs;
 import java.sql.*;
 
 public class CloudConnectivity {
-public static void main(String[] args) {
+	public static void main(String[] args) {
 		
 		Connection con;
+		
+		// Establishes a connection between the Java program and the MySQL database. 
 		
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
@@ -17,7 +19,6 @@ public static void main(String[] args) {
 			con.close();
 			
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}

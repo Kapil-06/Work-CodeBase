@@ -24,6 +24,7 @@ public class MobileList {
 			
 				while (rs.next()) {
 				    System.out.printf(" %-10s| %-17s | %-8s |    %-10s| %-4s | %-5s | %-18s | %-18s |  %-6d | %-24s  |  %-9s  |   %-7s %n",
+				    	//	Retrieve the mobile data from the result set
 				        rs.getInt("prodid"), 
 				        rs.getString("modelname"), 
 				        rs.getString("company"), 

@@ -24,6 +24,7 @@ public class MobileDBManager {
 			
 			pst=con.prepareStatement("insert into MOBILES values(?,?,?,?,?,?,?,?,?,?,?,?)");
 			
+			// Prompt the user for input 
 			System.out.print("enter product id :");
 			id=sc.nextInt();
 			sc.nextLine();
@@ -51,6 +52,7 @@ public class MobileDBManager {
 			System.out.print("enter rating :");
 			rtng=sc.nextDouble();
 			
+			// Set the parameter for insert query.
 			pst.setInt(1,id);
 			pst.setString(2, modnm);
 			pst.setString(3, comp);

@@ -23,13 +23,18 @@ public class MobileCatlog {
 			System.out.print("Enter company name :");
 			cmpny=sc.nextLine();
 			
-			pst.setString(1, cmpny);
+			pst.setString(1, cmpny); // Set the company name parameter for select query.
 			rs=pst.executeQuery();
 			
+			// Print formatted table headers for displaying data
 			System.out.printf("  %-10s |    %-10s    |   %-10s    %n", "productId", "Company", "Price");
 			System.out.println(" ---------------------------------------------");
 			while (rs.next()) {
-			    System.out.printf("    %-8s |    %-10s    |  %-10s    %n", rs.getInt("prodid"), rs.getString("company"), rs.getFloat("price"));
+			    System.out.printf("    %-8s |    %-10s    |  %-10s    %n", // Print formatted table headers for displaying data.
+			    		// Retrieve the data from the result set
+			    		rs.getInt("prodid"), 
+			    		rs.getString("company"), 
+			    		rs.getFloat("price"));
 			}
 		}
 		catch(Exception e) {
