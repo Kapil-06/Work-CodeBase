@@ -37,7 +37,6 @@ public class GroupByInfoDisplay {
 						rs.getString("average_price"), // Retrieve the average price from the result set
 						rs.getString("average_rating")); // Retrieve the average rating from the result set
 			}
-			con.close();
 		} catch (Exception e) {
 			System.out.println(e);
 		}

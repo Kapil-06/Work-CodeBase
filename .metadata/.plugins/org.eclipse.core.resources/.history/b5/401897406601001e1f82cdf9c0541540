@@ -63,8 +63,7 @@ public class MobilePriceUpdater {
 			}
 			else {
 				System.out.println("Mobile not found !!!!");
-			}	
-			con.close();
+			}			
 		}
 		catch(Exception e) {
 			System.out.println(e);

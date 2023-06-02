@@ -42,7 +42,6 @@ public class MobilesDescendingField {
 						rs.getString("ram"),
 						rs.getDouble("price"));
 			}
-			con.close();
 		}
 		catch(Exception e) {
 			System.out.println(e);

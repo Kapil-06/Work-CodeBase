@@ -61,7 +61,7 @@ public class MobileDeleter {
 				}
 				
 			}
-			con.close();
+			
 			
 		}
 		catch(Exception e) {

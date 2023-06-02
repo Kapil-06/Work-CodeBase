@@ -40,7 +40,6 @@ public class MobilePurposeUpdater {
 			else {
 				System.out.println("Purpose Not Update !!!!....");
 			}
-			con.close();
 		}
 		catch(Exception e) {
 			System.out.println(e);

@@ -49,7 +49,7 @@ public class MobileListByStorage {
 					        rs.getDouble("price"), 
 					        rs.getDouble("rating"));
 			}
-			con.close();
+
 		}
 		catch(Exception e) {
 			System.out.println(e);

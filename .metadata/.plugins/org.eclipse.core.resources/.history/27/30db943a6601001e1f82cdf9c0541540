@@ -36,7 +36,6 @@ public class MobileCatlog {
 			    		rs.getString("company"), 
 			    		rs.getFloat("price"));
 			}
-			con.close();
 		}
 		catch(Exception e) {
 			System.out.println(e);

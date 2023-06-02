@@ -19,7 +19,7 @@ public class AddingNewColumn {
 			int cnt=st.executeUpdate("ALTER TABLE MOBILES ADD COLUMN purpose VARCHAR(50)");
 			
 			System.out.println("Column added successfully");
-			con.close();
+			
 		}
 		catch(Exception e) {
 			System.out.println(e);
