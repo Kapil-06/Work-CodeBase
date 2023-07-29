@@ -1,0 +1,110 @@
+TABLES:-
+
+CREATE TABLE MOBILES (
+  prodid INT PRIMARY KEY,
+  modelname VARCHAR(25),
+  company VARCHAR(25),
+  connectivity ENUM('4G', '5G'),
+  ram VARCHAR(5),
+  rom VARCHAR(5),
+  color VARCHAR(15),
+  screen VARCHAR(15),
+  battery INT,
+  processor VARCHAR(25),
+  price DECIMAL(10, 2),
+  rating DECIMAL(3, 2)
+);
+
+
+-----------------------------------------------------------------------------------------------------------------
+  Data:-
+
+
+   INSERT INTO MOBILES (prodid, modelname, company, connectivity, ram, rom, color, screen, battery, processor, price, rating)
+   VALUES  
+  (1, 'iPhone 12', 'Apple', '5G', '6GB', '128GB', 'Black', 'Super Retina XDR', 2815, 'A14 Bionic', 56999.00, 4.6),
+  (2, 'Poco X2', 'Poco', '4G', '6GB', '128GB', 'Atlantis Blue', 'IPS LCD', 4500, 'Qualcomm Snapdragon 730G', 14999.99, 4.2),
+  (3, 'OPPO Find X3 Pro', 'OPPO', '5G', '12GB', '256GB', 'Black', 'AMOLED', 4500, 'Snapdragon 888', 109999.99, 4.5),
+  (4, 'Poco M2', 'Poco', '4G', '6GB', '128GB', 'Pitch Black', 'IPS LCD', 5000, 'MediaTek Helio G80', 10999.99, 4.0),
+  (5, 'Galaxy S21 Plus', 'Samsung', '5G', '8GB', '128GB', 'Phantom Silver', 'Dynamic AMOLED 2X', 4800, 'Exynos 2100', 100999.00, 4.3),
+  (6, 'Pixel 6a', 'Google', '5G', '6GB', '128GB', 'Chalk', 'OLED', 4410, 'Snapdragon 765G', 28999.00, 4.3),
+  (7, 'Nokia 7.2', 'Nokia', '4G', '6GB', '128GB', 'Charcoal', 'IPS LCD', 3500, 'Qualcomm Snapdragon 660', 17999.99, 4.0),
+  (8, 'Realme 8 Pro', 'Realme', '4G', '8GB', '128GB', 'Infinite Blue', 'Super AMOLED', 4500, 'Qualcomm Snapdragon 720G', 17999.99, 4.3),
+  (9, 'Galaxy Note 20', 'Samsung', '5G', '12GB', '256GB', 'Mystic Bronze', 'Dynamic AMOLED 2X', 4300, 'Exynos 990', 79999.00, 4.5),
+  (10, 'iPhone 13 Pro', 'Apple', '5G', '6GB', '128GB', 'Silver', 'Super Retina XDR', 3095, 'A15 Bionic', 149900.00, 4.7),
+  (11, 'Poco F2 Pro', 'Poco', '5G', '8GB', '256GB', 'Neon Blue', 'Super AMOLED', 4700, 'Qualcomm Snapdragon 865', 29999.99, 4.5),
+  (12, 'Vivo V21 5G', 'Vivo', '5G', '8GB', '128GB', 'Dusk Blue', 'AMOLED', 4000, 'MediaTek Dimensity 800U', 24999.99, 4.2),
+  (13, 'Vivo Y12s', 'Vivo', '4G', '3GB', '32GB', 'Phantom Black', 'IPS LCD', 5000, 'MediaTek Helio P35', 10999.00, 4.1),
+  (14, 'Realme X7 Pro', 'Realme', '5G', '8GB', '128GB', 'Fantasy', 'Super AMOLED', 4500, 'MediaTek Dimensity 1000+', 24999.99, 4.4),
+  (15, 'OnePlus 9 Pro', 'OnePlus', '5G', '12GB', '256GB', 'Morning Mist', 'Fluid AMOLED', 4500, 'Snapdragon 888', 74999.00, 4.4),
+  (16, 'Poco M3', 'Poco', '4G', '4GB', '64GB', 'Power Black', 'IPS LCD', 6000, 'Qualcomm Snapdragon 662', 10999.99, 4.1),
+  (17, 'Galaxy A52', 'Samsung', '4G', '6GB', '128GB', 'Awesome Blue', 'Super AMOLED', 4500, 'Snapdragon 720G', 24999.00, 4.2),
+  (18, 'Redmi Note 10', 'Xiaomi', '4G', '6GB', '64GB', 'Frost White', 'Super AMOLED', 5000, 'Snapdragon 678', 13999.00, 4.3),
+  (19, 'Mi 11X Pro', 'Xiaomi', '5G', '8GB', '128GB', 'Cosmic Black', 'AMOLED', 4520, 'Snapdragon 888', 39999.00, 4.5),
+  (20, 'OnePlus 9R', 'OnePlus', '5G', '8GB', '128GB', 'Lake Blue', 'Fluid AMOLED', 4500, 'Snapdragon 870', 39999.00, 4.4),
+  (21, 'Galaxy M31s', 'Samsung', '4G', '6GB', '128GB', 'Mirage Black', 'Super AMOLED', 6000, 'Exynos 9611', 18999.00, 4.1),
+  (22, 'iPhone SE', 'Apple', '4G', '3GB', '64GB', 'Product(RED)', 'Retina HD', 1821, 'A13 Bionic', 32999.00, 4.6),
+  (23, 'Poco M3 Pro', 'Poco', '5G', '4GB', '64GB', 'Cool Blue', 'IPS LCD', 5000, 'MediaTek Dimensity 700', 13999.99, 4.0),
+  (24, 'Redmi Note 11 Pro', 'Xiaomi', '5G', '8GB', '128GB', 'Magic Green', 'AMOLED', 5000, 'MediaTek Dimensity 1200', 21999.00, 4.3),
+  (25, 'Pixel 6', 'Google', '5G', '8GB', '128GB', 'Clearly White', 'OLED', 4614, 'Google Tensor', 59999.00, 4.7),
+  (26, 'Vivo Y31s', 'Vivo', '5G', '6GB', '128GB', 'Dreamy White', 'IPS LCD', 5000, 'Snapdragon 480', 17999.99, 4.0),
+  (27, 'OPPO A74 5G', 'OPPO', '5G', '6GB', '128GB', 'Fluid Black', 'IPS LCD', 5000, 'Snapdragon 480', 29999.99, 4.0),
+  (28, 'Galaxy Z Fold 3', 'Samsung', '5G', '12GB', '256GB', 'Phantom Black', 'Dynamic AMOLED 2X', 4400, 'Snapdragon 888', 149999.00, 4.9),
+  (29, 'iPhone 14 Pro', 'Apple', '5G', '6GB', '128GB', 'Pacific Blue', 'Super Retina XDR', 3110, 'A16 Bionic', 109999.00, 4.8),
+  (30, 'OnePlus 10', 'OnePlus', '5G', '12GB', '256GB', 'Stellar Black', 'Fluid AMOLED', 4700, 'Snapdragon 895', 79999.00, 4.6),
+ (31, 'OPPO A15s', 'OPPO', '4G', '4GB', '64GB', 'Dynamic Black', 'IPS LCD', 4230, 'MediaTek Helio P35', 14999.99, 3.7),
+  (32, 'OPPO Reno 4 Pro', 'OPPO', '4G', '8GB', '128GB', 'Starlight Blue', 'Super AMOLED', 4000, 'Snapdragon 720G', 39999.99, 4.2),
+  (33, 'Redmi 10 Prime', 'Xiaomi', '4G', '4GB', '64GB', 'Phantom Black', 'IPS LCD', 6000, 'MediaTek Helio G88', 12999.00, 4.2),
+  (34, 'Galaxy A72', 'Samsung', '4G', '8GB', '128GB', 'Awesome Violet', 'Super AMOLED', 5000, 'Snapdragon 720G', 34999.00, 4.4),
+  (35, 'iPhone XR', 'Apple', '4G', '3GB', '64GB', 'Coral', 'Liquid Retina HD', 2942, 'A12 Bionic', 41999.00, 4.5),
+  (36, 'Vivo Y20G', 'Vivo', '4G', '6GB', '128GB', 'Purist Blue', 'IPS LCD', 5000, 'MediaTek Helio G80', 14999.99, 4.0),
+  (37, 'Vivo X50 Pro', 'Vivo', '4G', '8GB', '256GB', 'Alpha Grey', 'AMOLED', 4315, 'Snapdragon 765G', 37999.99, 4.3),
+  (38, 'OPPO Reno 6 Pro', 'OPPO', '5G', '8GB', '128GB', 'Aurora', 'Super AMOLED', 4500, 'MediaTek Dimensity 1200', 69999.99, 4.3),
+  (39, 'Mi 11 Ultra', 'Xiaomi', '5G', '12GB', '256GB', 'Ceramic White', 'AMOLED', 5000, 'Snapdragon 888', 69999.00, 4.7),
+  (40, 'Nokia 5.4', 'Nokia', '4G', '6GB', '64GB', 'Polar Night', 'IPS LCD', 4000, 'Qualcomm Snapdragon 662', 14999.99, 4.0),
+  (41, 'Realme GT 5G', 'Realme', '5G', '12GB', '256GB', 'Dashing Blue', 'Super AMOLED', 4500, 'Qualcomm Snapdragon 888', 34999.99, 4.5),
+  (42, 'Pixel 6 Pro', 'Google', '5G', '12GB', '256GB', 'Stormy Black', 'OLED', 5000, 'Google Tensor', 89999.00, 4.9),
+  (43, 'Poco F3', 'Poco', '5G', '8GB', '128GB', 'Arctic White', 'Super AMOLED', 4520, 'Qualcomm Snapdragon 870', 25999.99, 4.4),
+  (44, 'Realme Narzo 10', 'Realme', '4G', '4GB', '128GB', 'That Blue', 'IPS LCD', 5000, 'MediaTek Helio G80', 11999.99, 4.0),
+  (45, 'Poco X3 GT', 'Poco', '5G', '8GB', '128GB', 'Stargaze Black', 'IPS LCD', 5000, 'MediaTek Dimensity 1100', 19999.99, 4.2),
+  (46, 'Galaxy M52 5G', 'Samsung', '5G', '6GB', '128GB', 'Awesome Black', 'Super AMOLED', 5000, 'Snapdragon 778G', 27999.00, 4.4),
+  (47, 'iPhone 13', 'Apple', '5G', '4GB', '64GB', 'Blue', 'Super Retina XDR', 3095, 'A15 Bionic', 79999.00, 4.6),
+  (48, 'Vivo V17 Pro', 'Vivo', '4G', '8GB', '128GB', 'Midnight Ocean', 'Super AMOLED', 4100, 'Snapdragon 675', 22999.99, 4.2),
+  (49, 'OPPO F19 Pro+', 'OPPO', '4G', '8GB', '128GB', 'Fluid Black', 'Super AMOLED', 4310, 'MediaTek Helio P95', 27999.99, 3.8),
+  (50, 'OnePlus Nord 2', 'OnePlus', '5G', '8GB', '128GB', 'Gray Sierra', 'Fluid AMOLED', 4500, 'MediaTek Dimensity 1200', 29999.00, 4.5),
+  (51, 'Redmi 9 Power', 'Xiaomi', '4G', '4GB', '64GB', 'Mighty Black', 'IPS LCD', 6000, 'Snapdragon 662', 10999.00, 4.3),
+  (52, 'OPPO F17 Pro', 'OPPO', '4G', '8GB', '128GB', 'Metallic White', 'Super AMOLED', 4015, 'MediaTek Helio P95', 27999.99, 4.0),
+  (53, 'Galaxy A51', 'Samsung', '4G', '6GB', '128GB', 'Prism Crush Blue', 'Super AMOLED', 4000, 'Exynos 9611', 20999.00, 4.1),
+  (54, 'iPhone 12 Mini', 'Apple', '5G', '4GB', '64GB', 'Red', 'Super Retina XDR', 2227, 'A14 Bionic', 69999.00, 4.7),
+  (55, 'Mi 11 Lite', 'Xiaomi', '5G', '6GB', '128GB', 'Tuscany Coral', 'AMOLED', 4250, 'Snapdragon 732G', 19999.00, 4.2),
+  (56, 'Pixel 5a', 'Google', '5G', '6GB', '128GB', 'Mostly Black', 'OLED', 4680, 'Snapdragon 765G', 44999.00, 4.3),
+  (57, 'Realme C25', 'Realme', '4G', '4GB', '64GB', 'Watery Blue', 'IPS LCD', 6000, 'MediaTek Helio G70', 9999.99, 4.0),
+  (58, 'OPPO A54', 'OPPO', '4G', '4GB', '128GB', 'Crystal Black', 'IPS LCD', 5000, 'MediaTek Helio P35', 19999.99, 3.9),
+  (59, 'Nokia 6.1 Plus', 'Nokia', '4G', '4GB', '64GB', 'Black', 'IPS LCD', 3060, 'Qualcomm Snapdragon 636', 11999.99, 3.8),
+  (60, 'Poco X3 Pro', 'Poco', '4G', '6GB', '128GB', 'Graphite Black', 'IPS LCD', 5160, 'Qualcomm Snapdragon 860', 18999.99, 4.3),
+  (61, 'OPPO A53s', 'OPPO', '4G', '6GB', '128GB', 'Fancy Blue', 'IPS LCD', 5000, 'Snapdragon 460', 22999.99, 4.1),
+  (62, 'Vivo X60 Pro', 'Vivo', '5G', '12GB', '256GB', 'Midnight Black', 'AMOLED', 4200, 'Exynos 1080', 45999.99, 4.4),
+  (63, 'Nokia 9 PureView', 'Nokia', '4G', '6GB', '128GB', 'Midnight Blue', 'P-OLED', 3320, 'Qualcomm Snapdragon 845', 39999.99, 4.1),
+  (64, 'Vivo Y73', 'Vivo', '4G', '8GB', '128GB', 'Diamond Flare', 'AMOLED', 4000, 'MediaTek Helio G95', 19999.99, 4.1),
+  (65, 'OnePlus 8T', 'OnePlus', '5G', '8GB', '128GB', 'Aquamarine Green', 'Fluid AMOLED', 4500, 'Snapdragon 865', 42999.00, 4.5),
+  (66, 'Nokia 3.4', 'Nokia', '4G', '4GB', '64GB', 'Fjord', 'IPS LCD', 4000, 'Qualcomm Snapdragon 460', 9999.99, 3.9),
+  (67, 'Redmi Note 9 Pro', 'Xiaomi', '4G', '6GB', '128GB', 'Interstellar Black', 'IPS LCD', 5020, 'Snapdragon 720G', 15999.00, 4.4),
+  (68, 'Poco C3', 'Poco', '4G', '4GB', '64GB', 'Matte Black', 'IPS LCD', 5000, 'MediaTek Helio G35', 9999.99, 3.8),
+  (69, 'Realme 7i', 'Realme', '4G', '8GB', '128GB', 'Fusion Green', 'IPS LCD', 5000, 'Qualcomm Snapdragon 662', 13999.99, 4.2),
+  (70, 'Galaxy M42 5G', 'Samsung', '5G', '6GB', '128GB', 'Prism Dot Black', 'Super AMOLED', 5000, 'Snapdragon 750G', 21999.00, 4.2),
+  (71, 'Nokia 2.4', 'Nokia', '4G', '3GB', '64GB', 'Charcoal', 'IPS LCD', 4500, 'MediaTek Helio P22', 7999.99, 3.7),
+  (72, 'Vivo Y20A', 'Vivo', '4G', '3GB', '64GB', 'Nebula Blue', 'IPS LCD', 5000, 'Qualcomm Snapdragon 439', 10999.00, 4.0);
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Stored procedure :-
+
+  delimiter //
+
+            CREATE PROCEDURE ReduceProductPrice(cmpnm VARCHAR(25),reduction float)
+            BEGIN
+            UPDATE MOBILES SET price = price - reduction WHERE company=cmpnm;
+            END;
+
+             // delimeter ; 
